@@ -1,0 +1,6 @@
+Greetings !
+This is a test email sent using a Mailing Client built using python.
+I hope you have a great day ahead :)
+
+With regards,
+Bharath M Kulkarni
