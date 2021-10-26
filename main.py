@@ -19,9 +19,9 @@ server.login(emailID,pwd)
 # COMPOSING THE MESSAGE HEADER:
 msg = MIMEMultipart('alternative')
 
-receiverEmailIDs = ["bhumikab331@gmail.com","isaana2319@gmail.com","sahanakulal.2306@gmail.com"]
+receiverEmailID = "dummy@gmail.com"
 msg['From'] = emailID
-msg['To'] = receiverEmailIDs[0]
+msg['To'] = receiverEmailID
 
 msg['Subject'] = "Test Email-Sorry for the Spam :)"
 
@@ -33,7 +33,7 @@ msg.attach(MIMEText(content, 'plain'))
 text = msg.as_string()
 
 # FINALLY SENDING THE EMAIL
-server.sendmail(emailID,receiverEmailIDs[0],text)
+server.sendmail(emailID,receiverEmailID,text)
 
 # STOPPING THE SERVER
 server.quit()
